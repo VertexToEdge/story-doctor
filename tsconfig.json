@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@story-doctor/core": ["./packages/core/src"],
+      "@story-doctor/core/*": ["./packages/core/src/*"],
+      "@story-doctor/ui": ["./packages/ui/src"],
+      "@story-doctor/ui/*": ["./packages/ui/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules", "dist", "**/dist", ".next", "**/.next"]
+}
