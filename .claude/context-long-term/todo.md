@@ -52,36 +52,36 @@
 
 ---
 
-## 🚀 Phase 3: API 서버 개발 (30-60분)
+## 🚀 Phase 3: API 서버 개발 (30-60분) ✅ 완료
 
 ### 3.1 Fastify 서버 초기화
-- [ ] Fastify 앱 생성 및 기본 설정
-- [ ] CORS 설정
-- [ ] 환경변수 설정 (.env - GEMINI_API_KEY)
-- [ ] 에러 핸들링 미들웨어
+- [x] Fastify 앱 생성 및 기본 설정 (apps/api/src/index.ts:1-68)
+- [x] CORS 설정 (apps/api/src/index.ts:39-42)
+- [x] 환경변수 설정 (.env.example, .env 구성 완료)
+- [x] 에러 핸들링 미들웨어 (apps/api/src/plugins/error-handler.ts:1-82)
 
 ### 3.2 LLM 연동
-- [ ] Gemini API SDK 설정
-- [ ] 질문 생성 함수 구현
+- [x] Gemini API SDK 설정 (apps/api/src/services/llm.ts:30-39)
+- [x] 질문 생성 함수 구현 (apps/api/src/services/llm.ts:47-76)
   - 6초 타임아웃 처리
   - 폴백 로직 (기본 질문 세트)
-- [ ] 응답 파싱 및 검증 (Zod)
+- [x] 응답 파싱 및 검증 (Zod)
 
 ### 3.3 API 엔드포인트
-- [ ] POST `/api/question-set` 구현
+- [x] POST `/api/question-set` 구현 (apps/api/src/routes/question-set.ts:35-111)
   - 입력: workId, lang
   - 출력: 질문 세트 (JSON)
   - LLM 실패 시 폴백 처리
   
-- [ ] POST `/api/evaluate` 구현
+- [x] POST `/api/evaluate` 구현 (apps/api/src/routes/evaluate.ts:30-139)
   - 입력: sessionId, questionSetId, answers
   - 점수 계산 로직
   - 라벨 및 이유 생성
   - 처방전 응답 (점수, 라벨, 팁, 주의)
 
 ### 3.4 데이터 관리
-- [ ] 인메모리 캐시 구현
-- [ ] 세션 관리 (임시 저장)
+- [x] 인메모리 캐시 구현 (apps/api/src/services/storage.ts:130-184)
+- [x] 세션 관리 (apps/api/src/services/storage.ts:30-80)
 
 ---
 
