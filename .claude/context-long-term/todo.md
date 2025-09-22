@@ -30,23 +30,23 @@
 
 ---
 
-## 🔧 Phase 2: Core 패키지 개발 (15-30분)
+## 🔧 Phase 2: Core 패키지 개발 (15-30분) ✅ 완료
 
 ### 2.1 타입 및 스키마 정의
-- [ ] Zod 스키마 작성 (Work, QuestionSet, Session, Answer)
-- [ ] TypeScript 타입 export
-- [ ] 응답 정규화 유틸 (binary/likert5)
+- [x] Zod 스키마 작성 (packages/core/src/schemas/index.ts:1-119)
+- [x] TypeScript 타입 export
+- [x] 응답 정규화 유틸 (binary/likert5)
 
 ### 2.2 점수화 로직
-- [ ] normalize 함수 구현 (0-1 정규화)
-- [ ] weightedScore 함수 구현 (가중합 계산)
-- [ ] labelOf 함수 구현 (점수→라벨 변환)
-- [ ] 적합도 해석 로직 (상위 2개 이유 추출)
+- [x] normalize 함수 구현 (packages/core/src/scoring/index.ts:21-58)
+- [x] calculateWeightedScore 함수 구현 (packages/core/src/scoring/index.ts:60-93)
+- [x] labelOf 함수 구현 (packages/core/src/scoring/index.ts:95-108)
+- [x] extractTopReasons 로직 (packages/core/src/scoring/index.ts:110-141)
 
 ### 2.3 기본 데이터 및 프롬프트
-- [ ] 홍길동전 텍스트 요약 하드코딩
-- [ ] 폴백용 기본 질문 세트 (6개 질문)
-- [ ] LLM 프롬프트 템플릿 작성
+- [x] 홍길동전 텍스트 요약 하드코딩 (packages/core/src/data/works.ts:16-48)
+- [x] 폴백용 기본 질문 세트 (packages/core/src/data/fallback-questions.ts:17-61)
+- [x] LLM 프롬프트 템플릿 작성 (packages/core/src/prompts/index.ts:1-170)
   - 질문 생성 프롬프트
   - 결과 해석 프롬프트
 
