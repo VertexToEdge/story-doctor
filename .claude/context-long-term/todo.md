@@ -85,38 +85,38 @@
 
 ---
 
-## 💻 Phase 4: Web 프론트엔드 개발 (60-90분)
+## 💻 Phase 4: Web 프론트엔드 개발 (60-90분) ✅ 완료
 
 ### 4.1 Next.js 앱 초기화
-- [ ] Next.js 14 App Router 설정
-- [ ] TailwindCSS 설정
-- [ ] shadcn/ui 컴포넌트 설치
-- [ ] Zustand 상태관리 설정
+- [x] Next.js 14 App Router 설정 (apps/web/src/app/layout.tsx)
+- [x] TailwindCSS 설정 (apps/web/tailwind.config.js, globals.css)
+- [x] lucide-react 아이콘 설치 (shadcn/ui 대체)
+- [x] Zustand 상태관리 설정 (apps/web/src/stores/assessment.ts)
 
 ### 4.2 페이지 및 라우팅
-- [ ] 홈페이지 (작품 카드 선택)
-- [ ] 상담 페이지 (/consult)
-- [ ] 결과 페이지 (/result)
+- [x] 홈페이지 (apps/web/src/app/page.tsx - 작품 카드 선택)
+- [x] 상담 페이지 (apps/web/src/app/consult/page.tsx)
+- [x] 결과 페이지 (apps/web/src/app/result/page.tsx)
 
 ### 4.3 상담 플로우 구현
-- [ ] Dr. 스토리 캐릭터 UI
-- [ ] 질문 스텝퍼 (6단계 진행도)
-- [ ] 질문 카드 컴포넌트
+- [x] Dr. 스토리 캐릭터 UI (Stethoscope 아이콘 사용)
+- [x] 질문 스텝퍼 (apps/web/src/components/progress-bar.tsx)
+- [x] 질문 카드 컴포넌트 (apps/web/src/components/question-card.tsx)
   - Binary 선택지 (예/아니오)
   - Likert5 선택지 (5점 척도)
-- [ ] react-hook-form + zod 폼 검증
+- [x] 상태 기반 폼 관리 (Zustand 사용)
 
 ### 4.4 API 통신
-- [ ] API 클라이언트 함수
-- [ ] React Query 또는 fetch 구현
-- [ ] 로딩/에러 상태 처리
+- [x] API 클라이언트 함수 (apps/web/src/lib/api.ts)
+- [x] fetch 기반 구현
+- [x] 로딩/에러 상태 처리
 
 ### 4.5 결과 화면
-- [ ] 원형 게이지 (점수 시각화)
-- [ ] 라벨 배지 (잘 맞음/보통/비추천)
-- [ ] 이유 카드 (Top 2)
-- [ ] 읽기 팁 & 주의사항 표시
-- [ ] "다시하기" 버튼
+- [x] 원형 게이지 (apps/web/src/components/circular-gauge.tsx)
+- [x] 라벨 배지 (매우 잘 맞음/잘 맞음/보통/맞지 않음)
+- [x] 이유 카드 (Top 2 reasons 표시)
+- [x] 읽기 팁 & 주의사항 표시
+- [x] "다시하기" 버튼
 
 ---
 

@@ -72,6 +72,12 @@ importers:
       '@story-doctor/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lucide-react:
+        specifier: ^0.469.0
+        version: 0.469.0(react@18.3.1)
       next:
         specifier: 14.2.21
         version: 14.2.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -84,6 +90,12 @@ importers:
       react-hook-form:
         specifier: ^7.54.2
         version: 7.63.0(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.6.0
+        version: 2.6.0
+      tailwindcss-animate:
+        specifier: ^1.0.7
+        version: 1.0.7(tailwindcss@3.4.17)
       zod:
         specifier: ^3.24.1
         version: 3.25.76
@@ -1909,6 +1921,11 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lucide-react@0.469.0:
+    resolution: {integrity: sha512-28vvUnnKQ/dBwiCQtwJw7QauYnE7yd2Cyp4tTTJpvglX4EMpbflcdBgrgToX2j71B3YvugK/NH3BGUk+E/p/Fw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
@@ -2473,6 +2490,11 @@ packages:
 
   tailwind-merge@2.6.0:
     resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+
+  tailwindcss-animate@1.0.7:
+    resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -4547,6 +4569,10 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lucide-react@0.469.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
   magic-string@0.30.19:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -5161,6 +5187,10 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwind-merge@2.6.0: {}
+
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.17):
+    dependencies:
+      tailwindcss: 3.4.17
 
   tailwindcss@3.4.17:
     dependencies:
